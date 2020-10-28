@@ -1,5 +1,5 @@
-import React, { useState }from 'react';
-import firebase from './utils/firebaseConfig';
+import React, { useState, useEffect } from "react";
+import firebase from "./utils/firebaseConfig";
 
 const App = () => {
   const [isSignedIn, setSignedIn] = useState(false);
@@ -17,14 +17,13 @@ const App = () => {
   };
 
   useEffect(() => {
-    firebase
-  })
+    firebase.auth().onAuthStateChanged((user) => {
+      setSignedIn(!!user);
+      console.log(user);
+    });
+  },[]);
 
-  return (
-    <div>
-      
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
