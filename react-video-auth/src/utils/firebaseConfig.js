@@ -1,10 +1,9 @@
-import firebase from 'firebase';
+import firebase from "firebase";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCIxzN3ZNIAJd_VOIXsIkF4qJV5dv_23OA",
-		authDomain: "react-video-auth-e1188.firebaseapp.com",
-		
-		 
+  authDomain: "react-video-auth-e1188.firebaseapp.com",
+
   //databaseURL: "https://react-video-auth-e1188.firebaseio.com",
   //projectId: "react-video-auth-e1188",
   //storageBucket: "react-video-auth-e1188.appspot.com",
